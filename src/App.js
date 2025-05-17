@@ -3,14 +3,12 @@ import Welcome from './components/Welcome.jsx';
 import Test from './components/Test.jsx';
 import Phara from './components/Phara.jsx';
 import Country from './components/Country.jsx';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
-
-
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Help from './page/Help.jsx';
 function App() {
-  //const x = alert('open');
   return (
+
+
     <>
     <router>
       <switch>
@@ -35,5 +33,13 @@ function App() {
     </>
   );
 }
+
+  <div> <Router>
+      <Routes>
+        <Route path="/" element={<Help/>} />
+      </Routes>
+    </Router>
+    </div> 
+
 
 export default App;
