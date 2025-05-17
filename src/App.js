@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Page from "./page/Page";
-import Help from "./page/Help"; 
+import Help from "./components/Help"; 
 
 function App() {
   return (
